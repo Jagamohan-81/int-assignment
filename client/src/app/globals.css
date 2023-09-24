@@ -1,0 +1,252 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-wraper {
+  padding: 6% 10% 0;
+}
+
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set the minimum height of the viewport */
+}
+
+.main-wraper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  z-index: auto;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer {
+  flex-shrink: 0;
+  /* Add styling for the footer */
+}
+
+@media (max-width: 639px) {
+  .main-wraper {
+    padding-top: 75px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 930px) {
+  .main-wraper {
+    padding: 9% 10% 0;
+  }
+}
+
+:root {
+  /* Font Family */
+  --Jagamohan81-personal-font: var(--font-headings, "Open Sans", sans-serif);
+  --Jagamohan81-personal-hero-font: var(--font-headings, "Oswald", sans-serif);
+
+  /* Font Size */
+  --Jagamohan81-personal-font-size-base: 18px;
+  --Jagamohan81-personal-font-size-xss: 13px;
+  --Jagamohan81-personal-font-size-xs: 14px;
+  --Jagamohan81-personal-font-size-sm: 15px;
+  --Jagamohan81-personal-font-size-sml: 16px;
+  --Jagamohan81-personal-font-size-md: 24px;
+  --Jagamohan81-personal-font-size-mdl: 22px;
+  --Jagamohan81-personal-font-size-lg: 48px;
+  --Jagamohan81-personal-font-size-lg-mob: 30px;
+  --Jagamohan81-personal-font-size-md-mob: 20px;
+
+  /* Line Height */
+  --Jagamohan81-personal-font-line-height-normal: normal;
+  --Jagamohan81-personal-font-line-height-xl: 1.8;
+  --Jagamohan81-personal-font-line-height-lg: 1.5;
+  --Jagamohan81-personal-font-line-height-md: 20px;
+  --Jagamohan81-personal-font-line-height-28: 28px;
+  --Jagamohan81-personal-font-line-height-sm: 1.2;
+  --Jagamohan81-personal-font-line-height-xs: 1.1;
+  --Jagamohan81-personal-font-line-height-xss: 1;
+
+  /* Weight */
+  --Jagamohan81-personal-font-weight-light: 300;
+  --Jagamohan81-personal-font-weight-normal: 400;
+  --Jagamohan81-personal-font-weight-medium: 500;
+  --Jagamohan81-personal-font-weight-semibold: 600;
+  --Jagamohan81-personal-font-weight-bold: 700;
+  --Jagamohan81-personal-font-weight-extra-bold: 800;
+
+  /* Text Decoration */
+  --Jagamohan81-personal-line-solid: solid;
+  --Jagamohan81-personal-text-decoration-none: none;
+  --Jagamohan81-personal-text-decoration-underline: underline;
+
+  /* Colors */
+  --Jagamohan81-personal-transparent: transparent;
+  --Jagamohan81-personal-primary: #184ca1;
+  --Jagamohan81-personal-blue: #17519f;
+  --Jagamohan81-personal-dark-blue: #11459a;
+  --Jagamohan81-personal-dark-blue-v1: #1a509e;
+  --Jagamohan81-personal-dark-blue-v2: #4375bf;
+  --Jagamohan81-personal-dark-blue-v3: #4a83d6;
+  --Jagamohan81-personal-light-blue: #9abdf8;
+  --Jagamohan81-personal-light-blue-v1: #80bdff;
+  --Jagamohan81-personal-light-blue-v2: #e9f3fc;
+  --Jagamohan81-personal-light-blue-v3: #f2f8fe;
+  --Jagamohan81-personal-blue-breadcrumb: #2057b0;
+  --Jagamohan81-personal-prime: 3, 167, 254;
+  --Jagamohan81-personal-primary-opa: rgba(
+    var(--Jagamohan81-personal-prime),
+    0.8
+  );
+  --Jagamohan81-personal-blu: 26, 80, 158;
+  --Jagamohan81-personal-blu-opa: rgba(var(--Jagamohan81-personal-blu), 0.8);
+  --Jagamohan81-personal-red: #d71f27;
+  --Jagamohan81-personal-vivid-red: #e11b24;
+  --Jagamohan81-personal-vivid-red-v1: #e01b24;
+  --Jagamohan81-personal-reds: 223, 72, 78;
+  --Jagamohan81-personal-light-red-opa: rgba(
+    var(--Jagamohan81-personal-reds),
+    0.8
+  );
+  --Jagamohan81-personal-white: #ffffff;
+  --Jagamohan81-personal-gray: #54555d;
+  --Jagamohan81-personal-gray-v1: #727278;
+  --Jagamohan81-personal-gray-v2: #85868d;
+  --Jagamohan81-personal-gray-v3: #808186;
+  --Jagamohan81-personal-gray-v4: #6b6e71;
+  --Jagamohan81-personal-gray-v5: #929299;
+  --Jagamohan81-personal-dark-gray: #28292a;
+  --Jagamohan81-personal-dark-gray-v1: #3f4145;
+  --Jagamohan81-personal-light-gray: #c3c3c4;
+  --Jagamohan81-personal-light-gray-v1: #aeb7be;
+  --Jagamohan81-personal-light-gray-v2: #afb1b4;
+  --Jagamohan81-personal-light-gray-v3: #c0c0c2;
+  --Jagamohan81-personal-light-gray-v4: #ceced0;
+  --Jagamohan81-personal-light-gray-v5: #c5ced4;
+  --Jagamohan81-personal-light-gray-v6: #e3e3e5;
+  --Jagamohan81-personal-light-gray-v7: #ecf1f6;
+  --Jagamohan81-personal-light-gray-v8: #ebeff3;
+  --Jagamohan81-personal-light-gray-v9: #fefefe;
+  --Jagamohan81-personal-light-gray-v10: #f3f8fd;
+  --Jagamohan81-personal-light-gray-txt: #888894;
+  --Jagamohan81-personal-light-gray-bor: #c4c5c9;
+  --Jagamohan81-personal-black: #000000;
+  --Jagamohan81-personal-black-v1: #030614;
+  --Jagamohan81-personal-black-link: #14142b;
+  --Jagamohan81-personal-yellow: #fde000;
+  --Jagamohan81-personal-vivid-yellow: #fcea5b;
+  --Jagamohan81-personal-dark-yellow: #d7be00;
+  --Jagamohan81-personal-light-yellow: #fff3cd;
+  --Jagamohan81-personal-alert-yellow: #ffeeba;
+  --Jagamohan81-personal-alert-text-yellow: #856404;
+  --Jagamohan81-personal-yellows: 215, 190, 0;
+  --Jagamohan81-personal-yellow-opa: rgba(
+    var(--Jagamohan81-personal-yellows),
+    0.8
+  );
+  --Jagamohan81-personal-green: #0fb81f;
+  --Jagamohan81-personal-teal: #069a82;
+  --Jagamohan81-personal-teal-v1: #059a82;
+  --Jagamohan81-personal-teals: 6, 154, 130;
+  --Jagamohan81-personal-teal-opa: rgba(var(--Jagamohan81-personal-teals), 0.8);
+
+  /* Border */
+  --Jagamohan81-personal-border-none: none;
+
+  /* Spacing */
+  --Jagamohan81-personal-spacing-unit-auto: auto;
+  --Jagamohan81-personal-spacing-unit-none: 0px;
+  --Jagamohan81-personal-spacing-unit-base: 15px;
+  --Jagamohan81-personal-spacing-unit-1: 1px;
+  --Jagamohan81-personal-spacing-unit-6: 6px;
+  --Jagamohan81-personal-spacing-unit-8: 8px;
+  --Jagamohan81-personal-spacing-unit-15: 15px;
+  --Jagamohan81-personal-spacing-unit-xs: 5px;
+  --Jagamohan81-personal-spacing-unit-md: 30px;
+  --Jagamohan81-personal-spacing-unit-lg: 40px;
+  --Jagamohan81-personal-spacing-unit-max: 50px;
+  --Jagamohan81-personal-spacing-pagin: 30px;
+  --Jagamohan81-personal-spacing-pagin-md: 35px;
+
+  /* Padding */
+  --Jagamohan81-personal-padding-none: 0px;
+  --Jagamohan81-personal-padding-base: 1rem;
+  --Jagamohan81-personal-padding-base-sm: 0.7rem;
+  --Jagamohan81-personal-padding-base-md: 1.5rem;
+  --Jagamohan81-personal-padding-xs: 5px;
+  --Jagamohan81-personal-padding-sm: 10px;
+  --Jagamohan81-personal-padding-md: 20px;
+  --Jagamohan81-personal-padding-card: 18px;
+  --Jagamohan81-personal-padding-lg: 30px;
+  --Jagamohan81-personal-padding-large: 35px;
+  --Jagamohan81-personal-padding-card-top: 25px;
+  --Jagamohan81-personal-padding-det-card-top: 35px;
+  --Jagamohan81-personal-padding-max: 50px;
+  --Jagamohan81-personal-padding-maxes: 52px;
+  --Jagamohan81-personal-padding-maxes: 52px;
+  --Jagamohan81-personal-padding-maxes-02: 56px;
+  --Jagamohan81-personal-padding-max-02: 90px;
+  --Jagamohan81-personal-nav-menu-x: 2rem;
+  --Jagamohan81-personal-nav-menu-y: 3.25rem;
+  --Jagamohan81-personal-nav-menu-sm-x: 1.5rem;
+  --Jagamohan81-personal-nav-menu-sm-y: 2.5rem;
+  --Jagamohan81-personal-nav-sticky-menu-y: 2.7rem;
+  --Jagamohan81-personal-nav-sticky-menu-sm-y: 2.5rem;
+  --Jagamohan81-personal-nav-sticky-mob-menu-y: 0.4rem;
+  --Jagamohan81-personal-nav-submenu-x: 1.1rem;
+  --Jagamohan81-personal-nav-submenu-y: 1.15rem;
+  --Jagamohan81-personal-nav-submenu-sm-x: 0.8rem;
+  --Jagamohan81-personal-nav-submenu-sm-y: 0.8rem;
+  --Jagamohan81-personal-nav-submenu-sml-y: 0.7rem;
+
+  /* Margin */
+  --Jagamohan81-personal-margin-none: 0px;
+  --Jagamohan81-personal-margin-auto: auto;
+  --Jagamohan81-personal-margin-base: 1rem;
+  --Jagamohan81-personal-margin-xs: 1.5rem;
+  --Jagamohan81-personal-margin-xss: 1.7rem;
+  --Jagamohan81-personal-margin-xs-2: 1.9rem;
+  --Jagamohan81-personal-margin-sm: 0.5rem;
+  --Jagamohan81-personal-margin-xl: 2rem;
+  --Jagamohan81-personal-margin-xxl: 3rem;
+  --Jagamohan81-personal-margin-max: 4rem;
+  --Jagamohan81-personal-margin-bottom-xl: 2.5rem;
+  --Jagamohan81-personal-margin-bottom-max: 5rem;
+
+  /* Alignment */
+  --Jagamohan81-personal-align-left: left;
+  --Jagamohan81-personal-align-right: right;
+  --Jagamohan81-personal-align-bottom: bottom;
+  --Jagamohan81-personal-align-center: center;
+
+  /* Display */
+  --Jagamohan81-personal-display-inline: inline;
+  --Jagamohan81-personal-display-inline-block: inline-block;
+  --Jagamohan81-personal-display-block: block;
+  --Jagamohan81-personal-display-flex: flex;
+  --Jagamohan81-personal-display-flex: flex;
+  --Jagamohan81-personal-display-grid: grid;
+  --Jagamohan81-personal-display-table: table;
+  --Jagamohan81-personal-display-inherit: inherit;
+  --Jagamohan81-personal-display-revert: revert;
+  --Jagamohan81-personal-display-list-item: list-item;
+  --Jagamohan81-personal-display-table-cell: table-cell;
+  --Jagamohan81-personal-display-none: none;
+
+  /* Border Radius */
+  --Jagamohan81-personal-radius-none: 0px;
+  --Jagamohan81-personal-radius-lg: 50px;
+  --Jagamohan81-personal-radius-md: 30px;
+  --Jagamohan81-personal-radius-sm: 10px;
+  --Jagamohan81-personal-radius-xs: 5px;
+  --Jagamohan81-personal-radius-xxs: 2px;
+
+  /* Height */
+  --Jagamohan81-personal-height-auto: auto;
+  --Jagamohan81-personal-height-flex: 100%;
+  --Jagamohan81-personal-height-full: 100vh;
+}

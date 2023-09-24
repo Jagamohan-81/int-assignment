@@ -1,0 +1,66 @@
+/* Header.css */
+.header-container {
+  background-color: var(--Jagamohan81-personal-black);
+  padding: 10px 20px;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  width: 500px;
+}
+.user-name {
+  background-color: #010081;
+  overflow: hidden;
+}
+.nav-links a {
+  min-width: 50px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.nav-links span {
+  min-width: 50px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: var(--Jagamohan81-personal-yellow);
+}
+.nav-links-mobile {
+  position: fixed;
+  right: -100%;
+  width: 40%;
+  background-color: transparent;
+  transition: right 0.7s ease-in-out;
+  overflow-y: auto;
+  background-color: transparent;
+  background-color: #284059;
+  color: #010081;
+}
+
+.mobile-slide-container {
+  z-index: 10;
+}
+.mobile-menu-button {
+  z-index: 100;
+}
+.nav-links-mobile-open {
+  right: 0; /* Slide in from the right */
+}
+
+@media (max-width: 639px) {
+  .nav-links {
+    width: 100%;
+  }
+}

@@ -1,0 +1,39 @@
+/* Footer.css */
+.footer-container {
+  /* position: fixed; */
+  background-color: var(--Jagamohan81-personal-black);
+  color: white;
+  z-index: 100;
+  /* width: 100%;
+    bottom: 0; */
+}
+
+.footer-content {
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-links a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: var(--Jagamohan81-personal-yellow);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 639px) {
+  .footer-links {
+    width: 100%;
+  }
+}

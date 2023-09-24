@@ -1,0 +1,4 @@
+--------status--------
+-> 3 db validation for user.
+-> 4 user login validation.
+-> 5 jwt authorisation
