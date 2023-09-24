@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 const GoogleMap = () => {
-  const key = "AIzaSyDqIrqD7WLhLNEXocCc3rX0XU-KCbm1k_M";
+  const key = process.env.MAP_KEY;
   const suggestionsEndpoint = "http://localhost:3001/location/get-list";
 
   const [searchTerm, setSearchTerm] = useState("");
